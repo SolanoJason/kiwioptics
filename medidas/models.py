@@ -176,7 +176,7 @@ class Prescription(models.Model):
         return choices
 
     spherical_choices = generateChoices.__func__(-100, 101)
-    cylinder_choices = generateChoices.__func__(-29, 1)
+    cylinder_choices = generateChoices.__func__(-40, 1)
     axis_choices = [(i, f'{i}°') for i in range(180, -1, -1)]
     axis_choices.append(('', '--'))
     dip_choices = [(i, f'{i}mm') for i in range(81, 40, -1)]
