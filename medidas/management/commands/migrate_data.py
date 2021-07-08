@@ -38,7 +38,6 @@ class Command(BaseCommand):
             prescription = Prescription(
                 optic=optic, patient=patient, subsidiary=subsidiary, is_dip=True, **new_data
             )
-            prescription.save()
             if dip:
                 if prescription.has_far_table():
                     prescription.far_dnp_right = dip/2
@@ -46,5 +45,6 @@ class Command(BaseCommand):
                 if prescription.has_near_table():
                     prescription.near_dnp_right = dip/2
                     prescription.near_dnp_left = dip/2
+            prescription.save()
             print(prescription)
             print(f"far:{prescription.has_far_table()},intermediate:{prescription.has_intermediate_table()},near:{prescription.has_near_table()}")
