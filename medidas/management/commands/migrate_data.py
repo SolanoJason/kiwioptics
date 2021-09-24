@@ -4,7 +4,7 @@ from users.models import Account
 from django.conf import settings
 import json
 
-USERNAME = 'techi211706@hotmail.com'
+USERNAME = 'techi211706@gmail.com'
 FILE = settings.BASE_DIR.joinpath('migrate.json')
 
 
