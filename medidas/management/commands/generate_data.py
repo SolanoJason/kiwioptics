@@ -13,7 +13,7 @@ from medidas.factories import (
     SubsidiaryFactory,
 )
 
-USERNAME = 'carlosantoniocastilloblas3@gmail.com'
+USERNAME = 'pajason2000@gmail.com'
 NUM_PATIENTS = 500
 NUM_PRESCRIPTIONS = 5000
 NUM_SUBSIDIARYS = 6
